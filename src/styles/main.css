@@ -1,0 +1,59 @@
+/* CSS Variables */
+
+:root {
+  --height-top-nav: 2.5em;
+  --height-top-nav-extended: 25em;
+  --col-bg: #234;
+  --col-page-bg: #fff8f0;
+  --col-nav-bg: #db6;
+  --col-nav-text: #222;
+  --col-nav-text-hover: #000;
+  --col-panel-bg: #fed;
+  --col-panel-bg-active: #db6;
+  --col-panel-text: #222;
+  --col-panel-lines: #db6;
+  --pad-panel: 1em;
+}
+
+/* General */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--col-bg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Layout Elements */
+
+/* ----> make into Vue component */
+.panel, .tabbed-panel {
+  width: 100%;
+  padding: var(--pad-panel);
+  background-color: var(--col-panel-bg);
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.panel {
+  padding: var(--pad-panel);
+}
+.tabbed-panel {
+  padding: 0;
+}
+.tabbed-panel-menu {
+  padding: 0;
+  border-bottom: 1px solid var(--col-panel-lines);
+}
+.tabbed-panel .pure-menu-active>.pure-menu-link,
+.tabbed-panel .pure-menu-link:focus,
+.tabbed-panel .pure-menu-link:hover,
+.tabbed-panel .pure-menu-link.active {
+  background-color: var(--col-panel-bg-active);
+}
+
+.tabbed-panel-content {
+  padding: var(--pad-panel);
+}
+
