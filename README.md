@@ -1,5 +1,13 @@
-# Vue 3 + Vite
+# Vue 3 + Vite + vue-router + Pinia + PureCSS + PHP Auth
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Boilerplate for future Vue3 projects. This boilerplate contains
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+- Basic website setup including Home view (logged out and logged in), Imprint view, Login and register view
+- Three page layouts: Full screen, Page with max-width and centered box
+- Basic components: Login and Register Forms, Navigation bar, tabbed panel
+- Basic styling based upon Pure CSS
+- Routing with vue-router (with Web Hash History)
+- State management with Pinia
+- Authentification System including PHP backend
+
+Files with sensitive auth information are missing. Note that there is non-sensitive personal information (e.g. ImpressumView) that needs to be changed before publishing elsewhere.
